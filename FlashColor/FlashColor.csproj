@@ -1,0 +1,26 @@
+<Project Sdk="Dalamud.NET.Sdk/15.0.0">
+  <PropertyGroup>
+    <Version>0.1.0.0</Version>
+    <Description>Contrast and color balance for the game's own image, without clipping bright effects.</Description>
+    <Nullable>enable</Nullable>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <InternalsVisibleTo Include="FlashColor.Tests" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <!-- Accès à DirectX 11 : la bibliothèque est fournie par Dalamud, on ne la copie pas. -->
+    <Reference Include="TerraFX.Interop.Windows" HintPath="$(DalamudLibPath)TerraFX.Interop.Windows.dll" Private="false" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Shaders\ToneMapping.hlsl" LogicalName="FlashColor.ToneMapping.hlsl" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <!-- Icône de la liste des plugins de Dalamud : pour une version de dev, il la lit dans images\ à côté de la DLL. -->
+    <None Include="..\images\icon.png" Link="images\icon.png" CopyToOutputDirectory="PreserveNewest" />
+  </ItemGroup>
+</Project>

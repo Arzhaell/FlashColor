@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="FlashColor/FlashColor.csproj" />
+  <Project Path="FlashColor.Tests/FlashColor.Tests.csproj" />
+</Solution>
