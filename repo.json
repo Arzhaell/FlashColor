@@ -1,0 +1,32 @@
+[
+  {
+    "Author": "Arzhael",
+    "Name": "FlashColor",
+    "InternalName": "FlashColor",
+    "AssemblyVersion": "1.0.0.0",
+    "Description": "Adjust exposure, contrast, saturation, vibrance and white balance inside the game's own tone mapping, before the image is cut to what the screen can show. Bright effects such as flames keep their gradient and their color instead of turning into flat white or yellow patches, textures keep their details, and the game's interface is never touched.\nAlso: shadows, midtones and lights, per-color settings, sharpness and clarity, presets (and your own), the game's GPose filters everywhere, and a cutscene-like white flash.\nAvailable in English and French. Command: /flashcolor",
+    "ApplicableVersion": "any",
+    "RepoUrl": "https://github.com/Arzhaell/FlashColor",
+    "Tags": [
+      "graphics",
+      "color",
+      "contrast",
+      "tonemap",
+      "reshade",
+      "gpose",
+      "filter"
+    ],
+    "DalamudApiLevel": 15,
+    "LoadRequiredState": 0,
+    "LoadSync": false,
+    "CanUnloadAsync": false,
+    "LoadPriority": 0,
+    "IconUrl": "https://raw.githubusercontent.com/Arzhaell/FlashColor/main/images/icon.png",
+    "Punchline": "Contrast and color balance for the game's image, without clipping flames and bright effects.",
+    "AcceptsFeedback": true,
+    "DownloadLinkInstall": "https://github.com/Arzhaell/FlashColor/releases/download/v1.0.0/latest.zip",
+    "DownloadLinkUpdate": "https://github.com/Arzhaell/FlashColor/releases/download/v1.0.0/latest.zip",
+    "DownloadLinkTesting": "https://github.com/Arzhaell/FlashColor/releases/download/v1.0.0/latest.zip",
+    "LastUpdate": 1793381612
+  }
+]
